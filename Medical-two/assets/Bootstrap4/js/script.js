@@ -115,14 +115,269 @@ $(function () {
             $(this).addClass('nav-active');
         });
 });
-/*======================= Owl Carousel =======================*/
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 10) {
-            $('.nav-link').addClass('text-white');
+/*======================= Counter Script Function =======================*/
 
+
+$(document).ready(function () {
+
+
+});
+/*======================= Load Section Function =======================*/
+var counters = [];
+counters = $(".counter-value");
+var countersQuantity = counters.length;
+console.log(counters + "," + countersQuantity);
+var counter = [];
+
+for (i = 0; i < countersQuantity; i++) {
+    counter[i] = parseInt(counters[i].innerHTML);
+}
+var count = function (start, value, id) {
+    var localStart = start;
+    setInterval(function () {
+        if (localStart < value) {
+            localStart++;
+            counters[id].innerHTML = localStart;
+        }
+    }, 1);
+}
+var cond = true;
+requestScrollAnimation((pos) => {
+    var elAlert = document.getElementById("counter-section");
+    var isVisible = isScrolledIntoView(elAlert, true);
+
+    if (isVisible) {
+        if (cond) {
+            for (var j = 0; j < countersQuantity; j++) {
+                count(0, counter[j], j);
+            }
+            cond = false;
+        }
+
+
+    }
+});
+
+
+/* ==================== Js Function to hide or Show the Different Sections  ================== */
+$(function () {
+    $("#neuro").hide();
+    $("#ortho").show();
+    $("#heart").hide();
+    $("#dental").hide();
+
+    $("#neurolink").click((e) => {
+        $("#neuro").show();
+        $("#ortho").hide();
+        $("#heart").hide();
+        $("#dental").hide();
+
+    });
+    $("#orthoLink").click(() => {
+        $("#heart").hide();
+        $("#dental").hide();
+        $("#neuro").hide();
+        $("#ortho").show();
+    });
+    $("#heartLink").click(() => {
+        $("#neuro").hide();
+        $("#ortho").hide();
+        $("#dental").hide();
+        $("#heart").show();
+    });
+    $("#dentalLink").click(() => {
+        $("#neuro").hide();
+        $("#ortho").hide();
+        $("#heart").hide();
+        $("#dental").show();
+    });
+});
+/* ==================== Js Function for the Change the hover Effect ================== */
+$(function () {
+    var neuLink = $("#neurolink");
+    var othoLink = $("#orthoLink");
+    var heartLink = $("#heartLink");
+    var dentalLink = $("#dentalLink");
+
+
+    dentalLink.mouseenter((e) => {
+        dentalLink.css("background-color", "#e31f3b");
+        dentalLink.children("p").css("color", "white");
+        dentalLink.find("img").attr("src", "assets/Images/department/teeth-w.png");
+    });
+    dentalLink.mouseleave((e) => {
+        dentalLink.css("background-color", "transparent");
+        dentalLink.children("p").css("color", "#828282");
+        dentalLink.find("img").attr("src", "assets/Images/department/teeth.png");
+    });
+
+    heartLink.mouseenter((e) => {
+        heartLink.css("background-color", "#e31f3b");
+        heartLink.children("p").css("color", "white");
+        heartLink.find("img").attr("src", "assets/Images/department/heart-w.png");
+    });
+    heartLink.mouseleave((e) => {
+        heartLink.css("background-color", "transparent");
+        heartLink.children("p").css("color", "#828282");
+        heartLink.find("img").attr("src", "assets/Images/department/heart.png");
+    });
+    othoLink.mouseenter((e) => {
+        othoLink.css("background-color", "#e31f3b");
+        othoLink.children("p").css("color", "white");
+        othoLink.find("img").attr("src", "assets/Images/department/ortho.png");
+    });
+    othoLink.mouseleave((e) => {
+        othoLink.css("background-color", "transparent");
+        othoLink.children("p").css("color", "#828282");
+        othoLink.find("img").attr("src", "assets/Images/department/ortho-red.png");
+    });
+
+    neuLink.mouseenter((e) => {
+        neuLink.css("background-color", "#e31f3b");
+        neuLink.children("p").css("color", "white");
+        neuLink.find("img").attr("src", "assets/Images/department/brain-w.png");
+    });
+    neuLink.mouseleave((e) => {
+        neuLink.css("background-color", "transparent");
+        neuLink.children("p").css("color", "#828282");
+        neuLink.find("img").attr("src", "assets/Images/department/brain.png");
+    });
+
+});
+/* ==================== Js Function for the Date Picker ================== */
+$(function () {
+    $("#datepicker").datepicker();
+});
+/* ==================== Js Function to give the class on Scroll ================== */
+$(function () {
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            $("nav").addClass("fixed-top nav-padding");
         } else {
-            $('.nav-link').removeClass('text-white');
+            $("nav").removeClass("fixed-top nav-padding");
         }
     });
+});
+//(function () {
+//    $(window).scroll(function () {
+//        var scroll = $(window).scrollTop();
+
+//        if (scroll >= 100) {
+//            $("nav").addClass("");
+//        } else {
+//            $("nav").removeClass("nav-padding");
+//        }
+//    });
+//});
+/* ==================== Js Function Provide Active Class on Nav Link================== */
+$(document).ready(function () {
+    $(".nav-link").click(function () {
+        $(this).addClass("active-me");
+        $(".nav-link").not(this).removeClass("active-me");
+    });
+
+
+});
+
+/* ==================== Js Function For the Slick Slider ================== */
+
+$(function () {
+    $('.multiple-items').slick({
+        dots: true,
+        arrows: false,
+        slidesToScroll: 4,
+        autoplay: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+});
+/* ==================== Js Function For the Owl Carousel Slider ================== */
+$(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        //autoplay: true,
+        margin: 10,
+        dots: false,
+        responsiveClass: true,
+        slideBy: '3',
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: true
+            },
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
+            }
+        }
+    });
+});
+/*===================== Load More Images ======================*/
+$(document).ready(function () {
+
+    $('.loadMore').loadMoreResults({
+        displayedItems: 6,
+        showItems: 3
+
+    });
+
+});
+
+/*===================== Load More List Tabs  ======================*/
+$(document).ready(function () {
+
+    var list = $(".list .list-group-item");
+    var numToShow = 3;
+    var button = $("#next");
+    var numInList = list.length;
+    list.hide();
+    if (numInList > numToShow) {
+        button.show();
+    }
+    list.slice(0, numToShow).show();
+
+    button.click(function () {
+        var showing = list.filter(':visible').length;
+        list.slice(showing - 1, showing + numToShow).fadeIn();
+        var nowShowing = list.filter(':visible').length;
+        if (nowShowing >= numInList) {
+            button.hide();
+        }
+    });
+
 });
