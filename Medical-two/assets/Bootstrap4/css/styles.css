@@ -21,6 +21,11 @@
 }
 
 @font-face {
+    font-family: 'gotham-pro-regular-58eb5afa47dbe';
+    src: url('../../Fonts/gotham-pro-regular-58eb5afa47dbe.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'gotham-pro-medium';
     src: url('../../Fonts/gotham-pro-medium.otf') format('opentype');
 }
@@ -31,9 +36,13 @@
 html, body {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
+/*.slick-track {
+    transform: translate3d(-1152px, -5px, 0px) !important;
+}*/
 /*==================== Header Styling =====================*/
 #header-bg-color {
     background-color: #f3f3f3;
@@ -93,7 +102,6 @@ html, body {
 }
 
 .active-me {
-    padding: 4px 20px;
     font-size: 20px;
     color: #fff;
     background-color: #ff5b62 !important;
@@ -159,11 +167,11 @@ html, body {
 .main-desc {
     color: #272320;
     font-size: 20px;
-    font-family: 'gotham-pro-bold-58eb5aca95df6';
+    font-family: 'gotham-pro-medium';
 }
 /**/
 #slider-section {
-    padding: 95px 110px;
+    padding: 95px 110px 0px 110px;
     background-color: #f3f3f3;
     width: 100%;
     height: auto;
@@ -171,7 +179,7 @@ html, body {
 
 .chosse-font {
     color: #222222;
-    font-size: 31px;
+    font-size: 30px;
     font-family: 'gotham-pro-bold-58eb5aca95df6';
 }
 
@@ -185,6 +193,474 @@ html, body {
     color: #828282;
     font-size: 18px;
     font-family: 'ProximaNova-Regular';
+}
+/*==================== main section Styling =====================*/
+#counter-section {
+    background-image: url('../../Images/count-banner.png');
+    padding: 125px 0px 70px 0px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.count-no {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+.count-text {
+    font-size: 26px;
+    color: #ffffff;
+    font-family: 'gotham-pro-medium';
+}
+/*==================== Department section Styling =====================*/
+.btn-more {
+    height: 60px;
+    width: 100%;
+    font-size: 22px;
+    color: #3c3c3c;
+    background-color: #acacac;
+    font-family: 'gotham-pro-medium';
+}
+
+.dep-text {
+    font-size: 54px;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+.dep-desc {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'gotham-pro-medium';
+}
+
+.dep-padding {
+    padding: 50px 130px;
+}
+
+.dep-cate-text {
+    color: #828282;
+    font-size: 20px;
+    font-family: 'gotham-pro-medium';
+}
+
+.more {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    font-size: 22px;
+    color: #3c3c3c;
+    background-color: #acacac;
+    font-family: 'gotham-pro-medium';
+}
+
+.list-group-item {
+    border: 2px solid #acacac;
+}
+
+.dep-border {
+    padding: 20px;
+    border: 2px solid #acacac;
+}
+
+.below-line {
+    line-height: 2em;
+    position: relative;
+}
+
+    .below-line:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 20%;
+        border: 2px solid #e31f3b;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+.otho-text {
+    color: #2b2b2b;
+    font-size: 30px;
+    font-family: 'gotham-pro-medium';
+}
+
+.otho-desc {
+    color: #4c4c4c;
+    font-size: 18px;
+    font-family: 'gotham-pro-medium';
+}
+
+.heading-text {
+    margin-bottom: 7px;
+    color: #575757;
+    font-size: 17px;
+    font-family: 'gotham-pro-medium';
+}
+
+.btn-contact-us {
+    width: 185px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 37px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    background-color: #e31f3b;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+    .btn-contact-us:hover {
+        color: #fff;
+    }
+/*==================== Reservation section Styling =====================*/
+#left-section {
+    width: 100%;
+    height: 500px;
+    background-color: #e31f3b;
+}
+
+.left-section-padding {
+    padding: 80px 60px;
+}
+
+.ser-text {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+.ser-desc {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'gotham-pro-regular-58eb5afa47dbe';
+}
+
+.btn-contact-white {
+    width: 185px;
+    height: 50px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 37px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+    .btn-contact-white:hover {
+        color: #000000;
+    }
+
+#right-section {
+    width: 100%;
+    height: 500px;
+    background-color: #f38b9a;
+}
+
+.right-section-padding {
+    padding: 40px 60px;
+}
+
+::placeholder {
+    color: #aaaaaa !important;
+    font-size: 16px !important;
+    font-family: 'gotham-pro-medium' !important;
+}
+
+option:first-child {
+    color: #aaaaaa;
+    font-size: 18px;
+    font-family: 'gotham-pro-medium';
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+    transition: none;
+}
+
+.btn-submit {
+    width: 160px;
+    height: 50px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #000000;
+    font-family: 'gotham-pro-medium';
+}
+
+.register-text {
+    color: #3a2c2d;
+    font-size: 30px;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+/*==================== Gallery section Styling =====================*/
+.gallery-text {
+    color: #000000;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+.gallery-desc {
+    color: #5c5c5c;
+    font-size: 19px;
+    font-family: 'gotham-pro-medium';
+}
+
+.gallery-padding {
+    padding: 55px 110px;
+}
+/*==================== Doctor section Styling =====================*/
+#doctors {
+    width: 100%;
+    height: auto;
+    padding: 85px 100px;
+    background-color: #f5f5f5;
+}
+
+.doc-text {
+    color: #000000;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+.doc-desc {
+    color: #585858;
+    font-size: 19px;
+    font-family: 'gotham-pro-medium';
+}
+
+.doc-name {
+    color: #e31f3b;
+    font-size: 24px;
+    font-family: 'gotham-pro-medium';
+}
+
+.card {
+    border: none;
+    border-radius: 0px;
+}
+
+.card-title {
+    color: #e31f3b;
+    font-size: 22px;
+    font-family: 'gotham-pro-medium';
+}
+
+.card-text {
+    color: #7a7a7a;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'gotham-pro-medium';
+}
+
+.card-shadow {
+    -webkit-box-shadow: 10px 10px 13px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 13px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 13px -12px rgba(0,0,0,0.75);
+}
+
+.slick-dots li.slick-active button:before {
+    color: #e31f3b;
+}
+
+.slick-dots li button:before {
+    font-size: 44px;
+    top: 42px;
+    color: #b8b8b8;
+}
+
+.slick-slide {
+    margin: 0 15px;
+}
+/*==================== Doctor section Styling =====================*/
+
+#touch-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    background-image: url('../../Images/contact-banner.png');
+}
+
+.touch-text {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.label-text {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'gotham-pro-medium';
+}
+
+.text-box {
+    width: 100%;
+    height: 52px;
+    color: #000000;
+    border: 1px solid #464949;
+    border-radius: 4px;
+    padding: 10px;
+    background: transparent;
+}
+
+.textarea-box {
+    width: 100%;
+    height: auto;
+    color: #000000;
+    border: 1px solid #464949;
+    border-radius: 4px;
+    padding: 10px;
+    background: transparent;
+}
+
+.btn-submit-con {
+    width: 150px;
+    height: 53px;
+    font-size: 18px;
+    color: #000000;
+    border: 2px solid #3e4244;
+    background: transparent;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+.page-footer {
+    width: 100%;
+    height: auto;
+    background-color: #0b0b0b;
+}
+
+.footer-font {
+    font-size: 22px;
+    padding-top: 22px;
+    font-family: 'gotham-pro-medium';
+    font-weight: 300;
+    left: 20%;
+}
+
+.footer-text-color {
+    color: #929292;
+}
+
+.social {
+    text-decoration: none;
+    color: white;
+}
+
+    .social:hover {
+        text-decoration: none;
+        color: white;
+    }
+/*==========OverLay Styling==========*/
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+    .content .content-overlay {
+        border: 20px solid rgb(227, 31, 59);
+        background-color: rgba(227, 31, 59, 0.8);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+    }
+
+
+    .content:hover .content-overlay {
+        opacity: 1;
+    }
+
+.content-image {
+    width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+
+.content-details p {
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+.fadeIn-left {
+    left: 20%;
+}
+
+
+.fadeIn-right {
+    left: 80%;
 }
 /*=================== Custome Margins ===================*/
 .mt-300 {
@@ -399,6 +875,10 @@ html, body {
 .ml-23 {
     margin-left: 23px;
 }
+
+.ml-77 {
+    margin-left: 77%;
+}
 /*================ Padding-Top ===================*/
 .pt-120 {
     padding-top: 120px;
@@ -411,25 +891,28 @@ html, body {
 
 
 /*======= Some Commen Styling ======*/
+button:focus {
+    outline: none;
+    outline: none;
+}
+
 .btn-load-more {
-    font-size: 22px;
+    text-transform: uppercase;
+    font-size: 20px;
     color: #fff;
-    background-color: #0b91cd;
+    background-color: #e31f3b;
     border: 0;
     outline: 0;
     padding: 10px 20px;
     cursor: pointer;
     width: 200px;
     height: 65px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'gotham-pro-bold-58eb5aca95df6';
     font-weight: bold;
-    -webkit-box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
-    -moz-box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
-    box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
 }
 
     .btn-load-more:hover {
-        background-color: #0b91cd;
+        background-color: #e31f3b;
     }
 
 .left-text {
@@ -465,10 +948,19 @@ html, body {
     box-shadow: none !important;
 }
 
-
+.list-group-item-action {
+    cursor: pointer !important;
+}
 /*================ Media Query ===============*/
-
 @media screen and (max-width: 1024px) {
+    .dep-cate-text {
+        font-size: 15px;
+    }
+
+    .count-text {
+        font-size: 21px;
+    }
+
     .custom-padding {
         padding: 16px 30px;
     }
@@ -483,6 +975,142 @@ html, body {
 
     .active-me {
         width: 100%;
+    }
+
+    .card-title {
+        font-size: 13px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .media-align {
+        text-align: center;
+    }
+
+    .media-mt {
+        margin-top: 30px;
+    }
+
+    .custom-padding {
+        padding: 16px 30px;
+    }
+
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .media-width {
+        width: 53%
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 23px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 18px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 17px;
+    }
+
+    .chosse-desc {
+        font-size: 16px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 455px;
+    }
+
+    #right-section {
+        height: 455px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 63px 15px 100px 15px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 55px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        padding: 7px !important;
     }
 }
 
@@ -506,28 +1134,494 @@ html, body {
     }
 
     .active-me {
-        width: 16%;
+        width: 18%;
+    }
+
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .media-width {
+        width: 72%
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 23px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 18px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 17px;
+    }
+
+    .chosse-desc {
+        font-size: 16px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 300px;
+    }
+
+    #right-section {
+        height: 460px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .card-title {
+        font-size: 17px;
+    }
+
+    .card-text {
+        font-size: 17px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 55px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        padding: 7px !important;
+    }
+
+    .float-right {
+        float: none !important;
+    }
+
+    .label-text {
+        margin-right: 8px;
     }
 }
 
 @media screen and (max-width: 414px) {
-    .media-mt {
-        margin-top: 30px;
+    #main-banner {
+        padding: 30px 20px;
     }
 
-    .custom-padding {
-        padding: 16px 50px;
+    .media-width {
+        width: 80%
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 22px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 25px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 20px;
+    }
+
+    .chosse-desc {
+        font-size: 18px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 400px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        padding: 7px !important;
     }
 
     .active-me {
-        width: 40%;
+        width: 42%;
     }
 }
 
 @media screen and (max-width: 411px) {
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 22px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 25px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 20px;
+    }
+
+    .chosse-desc {
+        font-size: 18px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 400px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        padding: 7px !important;
+    }
 }
 
 @media screen and (max-width: 375px) {
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .media-width {
+        width: 88%;
+    }
+
+    .color-bg {
+        font-size: 22px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 25px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 20px;
+    }
+
+    .chosse-desc {
+        font-size: 18px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 400px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        padding: 7px !important;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -539,12 +1633,112 @@ html, body {
         font-size: 32px;
     }
 
+    .media-width {
+        width: 92%;
+    }
+
     .color-bg {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .main-desc {
         font-size: 16px;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 25px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 20px;
+    }
+
+    .chosse-desc {
+        font-size: 18px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 400px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        padding: 7px !important;
     }
 }
 
@@ -559,18 +1753,719 @@ html, body {
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .label-text {
+        margin-right: 5px;
+    }
+
+    .active-me {
+        width: 20%;
+    }
+
+    .media-mt {
+        margin-top: 30px;
+    }
+
+    .custom-padding {
+        padding: 16px 50px;
+    }
+
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 22px;
+    }
+
+    .main-desc {
+        font-size: 15px;
+    }
+
+    .media-width {
+        width: 66%;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 21px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 18px;
+    }
+
+    .chosse-desc {
+        font-size: 15px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 320px;
+    }
+
+    #right-section {
+        height: 470px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 70px 15px 100px 15px;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 63px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    #counter-section {
+        padding: 30px 0px 50px 0px;
+    }
+
+    .float-right {
+        float: none !important;
+    }
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
+    .float-right {
+        float: none !important;
+    }
+
+    .active-me {
+        width: 20%;
+    }
+
+    .media-mt {
+        margin-top: 30px;
+    }
+
+    .custom-padding {
+        padding: 16px 50px;
+    }
+
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 22px;
+    }
+
+    .main-desc {
+        width: 58%;
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 42%;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 15px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 14px;
+    }
+
+    .chosse-desc {
+        font-size: 13px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 320px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    #counter-section {
+        padding: 30px 0px 50px 0px;
+    }
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .float-right {
+        float: none !important;
+    }
+
+    .active-me {
+        width: 20%;
+    }
+
+    .media-mt {
+        margin-top: 30px;
+    }
+
+    .custom-padding {
+        padding: 16px 50px;
+    }
+
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 22px;
+    }
+
+    .main-desc {
+        width: 58%;
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 42%;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 15px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 14px;
+    }
+
+    .chosse-desc {
+        font-size: 13px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 320px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    #counter-section {
+        padding: 30px 0px 50px 0px;
+    }
 }
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
+    .float-right {
+        float: none !important;
+    }
+
+    .active-me {
+        width: 20%;
+    }
+
+    .media-mt {
+        margin-top: 30px;
+    }
+
+    .custom-padding {
+        padding: 16px 50px;
+    }
+
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 22px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 53%;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 15px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 14px;
+    }
+
+    .chosse-desc {
+        font-size: 13px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 320px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    #counter-section {
+        padding: 30px 0px 50px 0px;
+    }
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .active-me {
+        width: 20%;
+    }
+
+    .media-mt {
+        margin-top: 30px;
+    }
+
+    .custom-padding {
+        padding: 16px 50px;
+    }
+
+    #main-banner {
+        padding: 30px 20px;
+    }
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    .color-bg {
+        font-size: 22px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 53%;
+    }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 15px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 14px;
+    }
+
+    .chosse-desc {
+        font-size: 13px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 320px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    #counter-section {
+        padding: 30px 0px 50px 0px;
+    }
+
+    .float-right {
+        float: none !important;
+    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
@@ -595,7 +2490,7 @@ html, body {
     }
 
     .color-bg {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .main-desc {
@@ -605,4 +2500,115 @@ html, body {
     .media-width {
         width: 53%;
     }
+
+    #slider-section {
+        padding: 60px 10px 0px 10px;
+    }
+
+    .chosse-font {
+        font-size: 15px;
+    }
+
+    .chosse-sub-desc {
+        font-size: 14px;
+    }
+
+    .chosse-desc {
+        font-size: 13px;
+    }
+
+    .dep-text {
+        font-size: 28px;
+    }
+
+    .dep-desc {
+        font-size: 15px;
+    }
+
+    .dep-padding {
+        padding: 45px 20px;
+    }
+
+    .ser-text {
+        font-size: 19px;
+    }
+
+    .ser-desc {
+        font-size: 15px;
+    }
+
+    .left-section-padding {
+        padding: 40px 30px;
+    }
+
+    #left-section {
+        height: 320px;
+    }
+
+    #right-section {
+        height: 630px;
+    }
+
+    .register-text {
+        font-size: 25px;
+    }
+
+    .right-section-padding {
+        padding: 20px 25px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .gallery-text {
+        font-size: 28px;
+    }
+
+    .gallery-desc {
+        font-size: 15px;
+    }
+
+    .gallery-padding {
+        padding: 15px 20px;
+    }
+
+    #doctors {
+        padding: 20px 15px 100px 15px;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .doc-text {
+        font-size: 24px;
+    }
+
+    .doc-desc {
+        font-size: 15px;
+    }
+
+    #touch-section {
+        padding: 15px 15px;
+    }
+
+    .footer-font {
+        font-size: 15px;
+    }
+
+    #counter-section {
+        padding: 30px 0px 50px 0px;
+    }
+
+    .float-right {
+        float: none !important;
+    }
+    /*.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        padding: 7px !important;
+    }*/
 }

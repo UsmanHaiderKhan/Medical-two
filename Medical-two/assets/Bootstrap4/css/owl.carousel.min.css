@@ -82,6 +82,8 @@
         padding: 19px !important;
         font: inherit;
         margin: 10px;
+        position: relative;
+        top: -105px;
     }
 
     .owl-carousel.owl-loading {
