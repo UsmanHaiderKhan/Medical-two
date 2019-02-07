@@ -1121,6 +1121,10 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
+    .d-none {
+        display: block !important;
+    }
+
     .media-align {
         text-align: center;
     }
