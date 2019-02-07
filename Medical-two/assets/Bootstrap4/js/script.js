@@ -254,9 +254,9 @@ $(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 100) {
-            $("nav").addClass("fixed-top nav-padding");
+            $("nav").addClass("fixed-top");
         } else {
-            $("nav").removeClass("fixed-top nav-padding");
+            $("nav").removeClass("fixed-top");
         }
     });
 });
