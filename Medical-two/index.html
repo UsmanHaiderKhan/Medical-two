@@ -15,6 +15,7 @@
     <link href="assets/Bootstrap4/css/slick-theme.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/jquery-ui.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/styles.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.6.2/css/OverlayScrollbars.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -67,7 +68,10 @@
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light affix-top" data-spy="affix" data-offset-top="90">
+        <a href="index.html" class="d-none">
+            <img src="assets/Images/logo.png" width="100" />
+        </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -221,7 +225,7 @@
         </div>
         <div class="dep-padding">
             <div class="row">
-                <div class="col-lg-2 media-mt wrapper">
+                <div class="col-lg-2 media-mt wrapper scroll" style="height: 580px; overflow-y: auto">
                     <div class="list-group text-center list">
                         <a id="orthoLink" class="list-group-item list-group-item-action">
                             <img src="assets/Images/department/ortho-red.png" />
@@ -234,6 +238,14 @@
                         <a id="heartLink" class="list-group-item list-group-item-action">
                             <img src="assets/Images/department/heart.png" />
                             <p class="dep-cate-text mt-15">Cardiology</p>
+                        </a>
+                        <a id="dentalLink" class="list-group-item list-group-item-action">
+                            <img src="assets/Images/department/teeth.png" />
+                            <p class="dep-cate-text mt-15">Dental</p>
+                        </a>
+                        <a id="dentalLink" class="list-group-item list-group-item-action">
+                            <img src="assets/Images/department/teeth.png" />
+                            <p class="dep-cate-text mt-15">Dental</p>
                         </a>
                         <a id="dentalLink" class="list-group-item list-group-item-action">
                             <img src="assets/Images/department/teeth.png" />
@@ -814,9 +826,12 @@
     <script src="assets/Bootstrap4/js/scrollinToview.js"></script>
     <script src="assets/Bootstrap4/js/wow.min.js"></script>
     <script src="assets/Bootstrap4/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.6.2/js/OverlayScrollbars.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
-
+        document.addEventListener("DOMContentLoaded", function () {
+            OverlayScrollbars(document.querySelectorAll('.scroll'), {});
+        });
 
     </script>
 </body>
