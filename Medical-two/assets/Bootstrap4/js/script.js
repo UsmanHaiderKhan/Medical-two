@@ -42,7 +42,7 @@ $(function () {
 
 /*================== Read More Text ==================*/
 $(function () {
-    var showChar = 90;
+    var showChar = 250;
     var moretext = " ...";
     var lesstext = " ... less";
     $('.comments-space').each(function () {
@@ -58,36 +58,6 @@ $(function () {
     });
 
     $(".morelinks").click(function () {
-
-        if ($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext);
-        } else {
-            $(this).addClass("less");
-            $(this).html(lesstext);
-        }
-        $(this).parent().prev().toggle();
-        $(this).prev().toggle();
-        return false;
-    });
-});
-$(function () {
-    var showChar = 178;
-    var moretext = "Read More";
-    var lesstext = "Read Less";
-    $('.comments-spaces').each(function () {
-        var content = $(this).html();
-        if (content.length > showChar) {
-            var show_content = content.substr(0, showChar);
-            var hide_content = content.substr(showChar, content.length - showChar);
-            var html = show_content + '<span class="remaining-contents"><span>' + hide_content +
-                '</span><a href="" class="morelinkss btn btn-more-load link-style mt-45 btn-r-0" style="display:block;" >' + moretext + '</a>'
-                + '</span>';
-            $(this).html(html);
-        }
-    });
-
-    $(".morelinkss").click(function () {
 
         if ($(this).hasClass("less")) {
             $(this).removeClass("less");
@@ -165,83 +135,116 @@ $(function () {
     $("#ortho").show();
     $("#heart").hide();
     $("#dental").hide();
+    $("#pp").hide();
 
     $("#neurolink").click((e) => {
         $("#neuro").show();
         $("#ortho").hide();
         $("#heart").hide();
         $("#dental").hide();
-
+        $("#pp").hide();
     });
     $("#orthoLink").click(() => {
         $("#heart").hide();
         $("#dental").hide();
         $("#neuro").hide();
+        $("#pp").hide();
         $("#ortho").show();
     });
     $("#heartLink").click(() => {
         $("#neuro").hide();
         $("#ortho").hide();
         $("#dental").hide();
+        $("#pp").hide();
         $("#heart").show();
     });
     $("#dentalLink").click(() => {
         $("#neuro").hide();
         $("#ortho").hide();
         $("#heart").hide();
+        $("#pp").hide();
         $("#dental").show();
+
+    });
+    $("#ppLink").click(() => {
+        $("#neuro").hide();
+        $("#ortho").hide();
+        $("#heart").hide();
+        $("#dental").hide();
+        $("#pp").show();
     });
 });
 /* ==================== Js Function for the Change the hover Effect ================== */
+//$(function () {
+//    var neuLink = $("#neurolink");
+//    var othoLink = $("#orthoLink");
+//    var heartLink = $("#heartLink");
+//    var dentalLink = $("#dentalLink");
+//    var ppLink = $("#ppLink");
+
+
+//    dentalLink.mouseenter((e) => {
+//        dentalLink.css("background-color", "#e31f3b");
+//        dentalLink.children("p").css("color", "white");
+//        dentalLink.find("img").attr("src", "assets/Images/department/teeth-w.png");
+//    });
+//    dentalLink.mouseleave((e) => {
+//        dentalLink.css("background-color", "transparent");
+//        dentalLink.children("p").css("color", "#828282");
+//        dentalLink.find("img").attr("src", "assets/Images/department/teeth.png");
+//    });
+
+//    heartLink.mouseenter((e) => {
+//        heartLink.css("background-color", "#e31f3b");
+//        heartLink.children("p").css("color", "white");
+//        heartLink.find("img").attr("src", "assets/Images/department/heart-w.png");
+//    });
+//    heartLink.mouseleave((e) => {
+//        heartLink.css("background-color", "transparent");
+//        heartLink.children("p").css("color", "#828282");
+//        heartLink.find("img").attr("src", "assets/Images/department/heart.png");
+//    });
+//    othoLink.mouseenter((e) => {
+//        othoLink.css("background-color", "#e31f3b");
+//        othoLink.children("p").css("color", "white");
+//        othoLink.find("img").attr("src", "assets/Images/department/ortho.png");
+//    });
+//    othoLink.mouseleave((e) => {
+//        othoLink.css("background-color", "transparent");
+//        othoLink.children("p").css("color", "#828282");
+//        othoLink.find("img").attr("src", "assets/Images/department/ortho-red.png");
+//    });
+
+//    neuLink.mouseenter((e) => {
+//        neuLink.css("background-color", "#e31f3b");
+//        neuLink.children("p").css("color", "white");
+//        neuLink.find("img").attr("src", "assets/Images/department/brain-w.png");
+//    });
+//    neuLink.mouseleave((e) => {
+//        neuLink.css("background-color", "transparent");
+//        neuLink.children("p").css("color", "#828282");
+//        neuLink.find("img").attr("src", "assets/Images/department/brain.png");
+//    });
+//    ppLink.mouseenter((e) => {
+//        ppLink.css("background-color", "#e31f3b");
+//        ppLink.children("p").css("color", "white");
+//        ppLink.find("img").attr("src", "assets/Images/department/pp-w.png");
+//    });
+//    ppLink.mouseleave((e) => {
+//        ppLink.css("background-color", "transparent");
+//        ppLink.children("p").css("color", "#828282");
+//        ppLink.find("img").attr("src", "assets/Images/department/pp.png");
+//    });
+
+
+//});
 $(function () {
-    var neuLink = $("#neurolink");
-    var othoLink = $("#orthoLink");
-    var heartLink = $("#heartLink");
-    var dentalLink = $("#dentalLink");
+    $(".mi").on('click',
+        function () {
+            $('.mi').removeClass("nav-tabs-color");
+            $(this).addClass("nav-tabs-color");
 
-
-    dentalLink.mouseenter((e) => {
-        dentalLink.css("background-color", "#e31f3b");
-        dentalLink.children("p").css("color", "white");
-        dentalLink.find("img").attr("src", "assets/Images/department/teeth-w.png");
-    });
-    dentalLink.mouseleave((e) => {
-        dentalLink.css("background-color", "transparent");
-        dentalLink.children("p").css("color", "#828282");
-        dentalLink.find("img").attr("src", "assets/Images/department/teeth.png");
-    });
-
-    heartLink.mouseenter((e) => {
-        heartLink.css("background-color", "#e31f3b");
-        heartLink.children("p").css("color", "white");
-        heartLink.find("img").attr("src", "assets/Images/department/heart-w.png");
-    });
-    heartLink.mouseleave((e) => {
-        heartLink.css("background-color", "transparent");
-        heartLink.children("p").css("color", "#828282");
-        heartLink.find("img").attr("src", "assets/Images/department/heart.png");
-    });
-    othoLink.mouseenter((e) => {
-        othoLink.css("background-color", "#e31f3b");
-        othoLink.children("p").css("color", "white");
-        othoLink.find("img").attr("src", "assets/Images/department/ortho.png");
-    });
-    othoLink.mouseleave((e) => {
-        othoLink.css("background-color", "transparent");
-        othoLink.children("p").css("color", "#828282");
-        othoLink.find("img").attr("src", "assets/Images/department/ortho-red.png");
-    });
-
-    neuLink.mouseenter((e) => {
-        neuLink.css("background-color", "#e31f3b");
-        neuLink.children("p").css("color", "white");
-        neuLink.find("img").attr("src", "assets/Images/department/brain-w.png");
-    });
-    neuLink.mouseleave((e) => {
-        neuLink.css("background-color", "transparent");
-        neuLink.children("p").css("color", "#828282");
-        neuLink.find("img").attr("src", "assets/Images/department/brain.png");
-    });
+        });
 
 });
 /* ==================== Js Function for the Date Picker ================== */
@@ -252,25 +255,22 @@ $(function () {
 $(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-
-        if (scroll >= 100) {
+        var w_width = $(window).width();
+        if (w_width <= 480) {
+            if (scroll >= 350) {
+                $("nav").addClass("fixed-top");
+            } else {
+                $("nav").removeClass("fixed-top");
+            }
+        }
+        else if (scroll >= 100) {
             $("nav").addClass("fixed-top");
         } else {
             $("nav").removeClass("fixed-top");
         }
     });
 });
-//(function () {
-//    $(window).scroll(function () {
-//        var scroll = $(window).scrollTop();
 
-//        if (scroll >= 100) {
-//            $("nav").addClass("");
-//        } else {
-//            $("nav").removeClass("nav-padding");
-//        }
-//    });
-//});
 /* ==================== Js Function Provide Active Class on Nav Link================== */
 $(document).ready(function () {
     $(".nav-link").click(function () {
@@ -326,7 +326,7 @@ $(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
         //autoplay: true,
-        margin: 10,
+        margin: 20,
         dots: false,
         responsiveClass: true,
         slideBy: '3',
@@ -342,7 +342,7 @@ $(function () {
             1000: {
                 items: 3,
                 nav: true,
-                loop: false
+                loop: true
             }
         }
     });
@@ -362,7 +362,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     var list = $(".list .list-group-item");
-    var numToShow = 3;
+    var numToShow = 4;
     var button = $("#next");
     var numInList = list.length;
     list.hide();
