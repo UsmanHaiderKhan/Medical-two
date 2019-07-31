@@ -1,4 +1,4 @@
-﻿console.log("usman");
+﻿//console.log("usman");
 
 
 $(function () {
@@ -335,8 +335,12 @@ $(function () {
                 items: 1,
                 nav: true
             },
-            600: {
-                items: 3,
+            650: {
+                items: 2,
+                nav: true
+            },
+            750: {
+                items: 2,
                 nav: true
             },
             1000: {

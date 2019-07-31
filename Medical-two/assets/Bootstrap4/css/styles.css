@@ -105,7 +105,7 @@ html, body {
 }
 
 .custom-padding {
-    padding: 33px 118px;
+    padding: 33px 0px;
 }
 
 .text-one {
@@ -248,7 +248,7 @@ html, body {
 }
 
 .color-bg {
-    color: white;
+    color: #ffffff;
     padding: 10px 28px;
     font-size: 45px;
     text-transform: uppercase;
@@ -575,15 +575,23 @@ option:first-child {
     box-shadow: 10px 10px 13px -12px rgba(0,0,0,0.75);
 }
 
-.slick-dots li.slick-active button:before {
-    color: #e31f3b;
+.slick-slider .slick-track, .slick-slider .slick-list {
+    padding: 30px 0;
 }
 
-.slick-dots li button:before {
-    font-size: 44px;
-    top: 42px;
-    color: #b8b8b8;
+.slick-dots {
+    bottom: 28px;
 }
+
+    .slick-dots li.slick-active button:before {
+        color: #e31f3b;
+    }
+
+    .slick-dots li button:before {
+        font-size: 44px;
+        top: 42px;
+        color: #b8b8b8;
+    }
 
 .slick-slide {
     margin: 0 15px;
@@ -1129,9 +1137,6 @@ button:focus {
         padding: 30px 20px;
     }
 
-    .media-width {
-        width: 53%
-    }
 
     .main-text {
         font-size: 32px;
@@ -1218,7 +1223,7 @@ button:focus {
     }
 
     #doctors {
-        padding: 63px 15px 100px 15px;
+        padding: 63px 15px 20px 15px;
     }
 
     .doc-text {
@@ -1238,15 +1243,29 @@ button:focus {
     }
 }
 
+@media screen and (max-width:990px) {
+    .d-none {
+        display: block !important;
+    }
+}
+
 @media screen and (max-width:800px) {
     .custom-padding {
         padding: 16px 30px;
+    }
+
+    .media-justify {
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 768px) {
     .d-none {
         display: block !important;
+    }
+
+    .media-justify {
+        justify-content: center !important;
     }
 
     .media-align {
@@ -1269,9 +1288,7 @@ button:focus {
         padding: 30px 20px;
     }
 
-    .media-width {
-        width: 72%
-    }
+
 
     .main-text {
         font-size: 32px;
@@ -1407,7 +1424,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
     .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
         background-color: #ffffff;
         color: inherit;
@@ -1429,9 +1446,7 @@ button:focus {
         padding: 30px 20px;
     }
 
-    .media-width {
-        width: 80%
-    }
+
 
     .main-text {
         font-size: 32px;
@@ -1666,9 +1681,7 @@ button:focus {
         font-size: 32px;
     }
 
-    .media-width {
-        width: 88%;
-    }
+
 
     .color-bg {
         font-size: 22px;
@@ -1793,9 +1806,7 @@ button:focus {
         font-size: 32px;
     }
 
-    .media-width {
-        width: 92%;
-    }
+
 
     .color-bg {
         font-size: 22px;
@@ -1908,13 +1919,17 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 824px) and (orientation: landscape) {
     .d-none {
         display: block !important;
     }
 
+    .media-justify {
+        justify-content: center !important;
+    }
+
     .mail-text {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .mail-desc {
@@ -1953,9 +1968,7 @@ button:focus {
         font-size: 15px;
     }
 
-    .media-width {
-        width: 66%;
-    }
+
 
     #slider-section {
         padding: 60px 10px 0px 10px;
@@ -2071,6 +2084,10 @@ button:focus {
         margin-left: 30%;
     }
 
+    .media-width {
+        width: 42% !important;
+    }
+
     .float-right {
         float: none !important;
     }
@@ -2104,9 +2121,7 @@ button:focus {
         font-size: 16px;
     }
 
-    .media-width {
-        width: 42%;
-    }
+
 
     #slider-section {
         padding: 60px 10px 0px 10px;
@@ -2247,9 +2262,6 @@ button:focus {
         font-size: 16px;
     }
 
-    .media-width {
-        width: 42%;
-    }
 
     #slider-section {
         padding: 60px 10px 0px 10px;
@@ -2389,9 +2401,7 @@ button:focus {
         font-size: 16px;
     }
 
-    .media-width {
-        width: 53%;
-    }
+
 
     #slider-section {
         padding: 60px 10px 0px 10px;
@@ -2498,7 +2508,11 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 668px) and (orientation: landscape) {
+    .media-width {
+        width: 60% !important;
+    }
+
     .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
         background-color: #ffffff;
         color: inherit;
@@ -2540,9 +2554,7 @@ button:focus {
         font-size: 16px;
     }
 
-    .media-width {
-        width: 53%;
-    }
+
 
     #slider-section {
         padding: 60px 10px 0px 10px;
@@ -2682,24 +2694,22 @@ button:focus {
         font-size: 16px;
     }
 
-    .media-width {
-        width: 53%;
-    }
+
 
     #slider-section {
         padding: 60px 10px 0px 10px;
     }
 
     .chosse-font {
-        font-size: 15px;
+        font-size: 24px;
     }
 
     .chosse-sub-desc {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .chosse-desc {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .dep-text {

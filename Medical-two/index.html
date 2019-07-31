@@ -19,9 +19,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.6.2/css/OverlayScrollbars.min.css" rel="stylesheet" />
     <style>
 
-
-
-
         @font-face {
             font-family: 'FontsFree-Net-Proxima-Nova-Bold (1)';
             src: url('assets/Fonts/FontsFree-Net-Proxima-Nova-Bold (1).otf') format('opentype');
@@ -56,7 +53,7 @@
 <body>
     <header>
         <div id="header-bg-color">
-            <div class="custom-padding">
+            <div class="custom-padding container">
                 <div class="row">
                     <div class="col-lg-2 media-align">
                         <a href="index.html">
@@ -64,8 +61,8 @@
                         </a>
                     </div>
                     <div class="col-lg-8 ml-auto">
-                        <div class="row medi-margin-left">
-                            <div class="col-md-3 offset-md-3 mt-2 p-0">
+                        <div class="row medi-margin-left media-justify">
+                            <div class="col-md-3 offset-lg-3 mt-2 p-0">
                                 <div class="media media-mt">
                                     <img class="mr-3" src="assets/Images/header/email.png" alt="Generic placeholder image">
                                     <div class="media-body">
@@ -265,52 +262,54 @@
         </div>
         <div class="dep-padding">
             <div class="row">
-                <div class="col-lg-2 media-mt wrapper scroll" style="height: 580px; overflow-y: auto">
-                    <div class="list-group text-center list">
-                        <a id="orthoLink" class="list-group-item list-group-item-action mi nav-tabs-color">
-                            <img src="assets/Images/department/ortho-red.png" class="img-red" />
-                            <img src="assets/Images/department/ortho.png" class="img-white" />
-                            <p class="dep-cate-text mt-15">Orthopadics</p>
-                        </a>
-                        <a id="neurolink" class="list-group-item list-group-item-action mi d-inline-block">
-                            <img src="assets/Images/department/brain.png" class="img-red" />
-                            <img src="assets/Images/department/brain-w.png" class="img-white" />
-                            <p class="dep-cate-text mt-15">Neurology</p>
-                        </a>
-                        <a id="heartLink" class="list-group-item list-group-item-action mi">
-                            <img src="assets/Images/department/heart.png" class="img-red" />
-                            <img src="assets/Images/department/heart-w.png" class="img-white" />
-                            <p class="dep-cate-text mt-15">Cardiology</p>
-                        </a>
-                        <a id="dentalLink" class="list-group-item list-group-item-action mi">
-                            <img src="assets/Images/department/teeth.png" class="img-red" />
-                            <img src="assets/Images/department/teeth-w.png" class="img-white" />
-                            <p class="dep-cate-text mt-15">Dental</p>
-                        </a>
-                        <a id="ppLink" class="list-group-item list-group-item-action mi">
-                            <img src="assets/Images/department/pp.png" class="img-red" />
-                            <img src="assets/Images/department/pp-w.png" class="img-white" />
-                            <p class="dep-cate-text mt-15">Pulmonary</p>
-                        </a>
-                        <!--<a id="ppLink" class="list-group-item list-group-item-action mi">
-                            <img src="assets/Images/department/pp.png" />
-                            <p class="dep-cate-text mt-15">Eye</p>
-                        </a>
-                        <a id="ppLink" class="list-group-item list-group-item-action mi">
-                            <img src="assets/Images/department/pp.png" />
-                            <p class="dep-cate-text mt-15">Skin</p>
-                        </a>-->
-                        <!--<a href="#" id="next" class="more list-group-item list-group-item-action">
-                            <p>More</p>
-                        </a>-->
-                        <button id="next" class="btn btn-more btn-r-0">More</button>
+                <div class="col-lg-2 media-mt wrapper">
+                    <div class="inner-wrapper scroll" style="height: 580px; overflow-x: hidden;overflow-y: auto">
+                        <div class="list-group text-center list">
+                            <a id="orthoLink" class="list-group-item list-group-item-action mi nav-tabs-color">
+                                <img src="assets/Images/department/ortho-red.png" class="img-red" />
+                                <img src="assets/Images/department/ortho.png" class="img-white" />
+                                <p class="dep-cate-text mt-15">Orthopadics</p>
+                            </a>
+                            <a id="neurolink" class="list-group-item list-group-item-action mi d-inline-block">
+                                <img src="assets/Images/department/brain.png" class="img-red" />
+                                <img src="assets/Images/department/brain-w.png" class="img-white" />
+                                <p class="dep-cate-text mt-15">Neurology</p>
+                            </a>
+                            <a id="heartLink" class="list-group-item list-group-item-action mi">
+                                <img src="assets/Images/department/heart.png" class="img-red" />
+                                <img src="assets/Images/department/heart-w.png" class="img-white" />
+                                <p class="dep-cate-text mt-15">Cardiology</p>
+                            </a>
+                            <a id="dentalLink" class="list-group-item list-group-item-action mi">
+                                <img src="assets/Images/department/teeth.png" class="img-red" />
+                                <img src="assets/Images/department/teeth-w.png" class="img-white" />
+                                <p class="dep-cate-text mt-15">Dental</p>
+                            </a>
+                            <a id="ppLink" class="list-group-item list-group-item-action mi">
+                                <img src="assets/Images/department/pp.png" class="img-red" />
+                                <img src="assets/Images/department/pp-w.png" class="img-white" />
+                                <p class="dep-cate-text mt-15">Pulmonary</p>
+                            </a>
+                            <!--<a id="ppLink" class="list-group-item list-group-item-action mi">
+                                <img src="assets/Images/department/pp.png" />
+                                <p class="dep-cate-text mt-15">Eye</p>
+                            </a>
+                            <a id="ppLink" class="list-group-item list-group-item-action mi">
+                                <img src="assets/Images/department/pp.png" />
+                                <p class="dep-cate-text mt-15">Skin</p>
+                            </a>-->
+                            <!--<a href="#" id="next" class="more list-group-item list-group-item-action">
+                                <p>More</p>
+                            </a>-->
+                            <button id="next" class="btn btn-more btn-r-0">More</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-10 media-mt" id="ortho">
                     <div class="dep-border">
                         <div class="row">
                             <div class="col-md-5">
-                                <img src="assets/Images/department/orthopadic-1.png" class="h-100 img-fluid" />
+                                <img src="assets/Images/department/orthopadic-1.png" class=" img-fluid" />
                             </div>
                             <div class="col-md-7">
                                 <h2 class="below-line otho-text">Orthopadics</h2>
@@ -792,7 +791,7 @@
                 </div>
             </div>
         </div>
-        <div class="multiple-items mt-100 media-mt-45">
+        <div class="multiple-items media-mt-45">
             <div>
                 <div class="card text-center card-shadow">
                     <img src="assets/Images/doctors/doc-1.png" class="w-100" />
